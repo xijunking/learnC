@@ -32,6 +32,9 @@ char* mergeAlternately(char* word1, char* word2) {
     while(j<leth2){
         resStr[k++] = word2[j++];
     }
+    
+    // 字符 必须以终止符 结尾，否则可能出现意外情况
+    
     resStr[k] = '\0';
     return resStr;
 }
